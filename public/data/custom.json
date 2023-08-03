@@ -1,0 +1,5 @@
+[
+  { "id": "shot", "name": "shot", "price": "600" },
+  { "id": "syrup", "name": "syrup", "price": "600" },
+  { "id": "whipped cream", "name": "whipped cream", "price": "600" }
+]

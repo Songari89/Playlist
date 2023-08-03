@@ -1,0 +1,17 @@
+[
+  {"id": "Americano",
+  "name": "Americano",
+  "size" :"Tall / Grande / Venti",
+  "price": "4500 / 5000 / 5500"},
+  {
+    "id": "Latte",
+    "name": "Latte",
+    "size": "Tall / Grande / Venti",
+    "price": "5000 / 5500 / 6000"
+  },
+  {"id": "Tea",
+  "name": "Tea",
+  "size" :"Tall / Grande / Venti",
+  "price": "4500 / 5000 / 5500"}
+
+]

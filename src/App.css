@@ -1,38 +1,217 @@
-.App {
+* {
+  box-sizing: border-box;
+}
+.appprofilecontainer {
+  margin: 0 auto;
+  padding: 0;
+}
+.profilecontainer {
+  display: flex;
+}
+.avatarcontainer {
+  width: 200px;
+  height: 250px;
+  background-color: #ebebeb;
+  margin: auto;
+  border-radius: 10px;
+  position: relative;
+}
+.avatarphoto {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: block;
+  margin: 20px auto;
+}
+.avatarname {
+  width: 150px;
+  background-color: brown;
+  text-align: center;
+  color: White;
+  font-size: 1.5rem;
+  margin: 0 auto;
+}
+.isnew {
+  width: 50px;
+  height: 25px;
+  border-radius: 5px;
+  background-color: rgb(102, 177, 242);
+  text-align: center;
+  padding-top: 2px;
+  position: absolute;
+  top: 10%;
+  right: 10%;
+}
+.listcontainer {
+  display: flex;
+  justify-content: center;
+}
+.list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 15px 0;
+}
+.listwrap {
+  width: 200px;
+  background-color: #d9c8b7;
+  text-align: center;
+  padding: 5px;
+}
+.listwrap > h3 {
+  color: brown;
+}
+.checkbox {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.playlistcontainer {
+  width: 450px;
+  min-height: 550px;
+  background-color: #e48cbd;
+  padding: 0;
+  position: relative;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  box-sizing: border-box;
+}
+.leftdot {
+  width: 13px;
+  height: 13px;
+  border-radius: 100%;
+  border: 1px inset #ddd;
+  background-color: #fff4fe;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+.rightdot {
+  width: 13px;
+  height: 13px;
+  border-radius: 100%;
+  border: 1px inset #ddd;
+  background-color: #fff4fe;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+.b_leftdot {
+  width: 13px;
+  height: 13px;
+  border-radius: 100%;
+  border: 1px inset #ddd;
+  background-color: #fff4fe;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+}
+.b_rightdot {
+  width: 13px;
+  height: 13px;
+  border-radius: 100%;
+  border: 1px inset #ddd;
+  background-color: #fff4fe;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+}
+.playlistborder {
+  width: 410px;
+  min-height: 510px;
+  border: 5px solid #f4ee44;
+  position: static;
+  margin: 20px;
+  padding: 0;
+}
+.playlist {
+  font-size: 50px;
+  font-weight: 900;
+  color: #f4ee44;
+  text-shadow: 3px 3px #4dc039;
+  text-align: center;
+  padding: 15px 0;
+  margin: 0 0 50px 0;
+}
+.lists {
+  list-style: none;
+  padding: 0 45px 80px 45px;
+  margin: 0;
+}
+.listtitle {
+  color: rgb(255, 255, 255);
+  border-bottom: 3px solid #f4ee44;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  margin: 20px 5px 5px 5px;
+  padding: 0;
+}
+.listartist {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 13px;
+  color: #3a3a3a;
+}
+.btnwrap {
+  width: 400px;
+  display: flex;
+  position: absolute;
+  bottom: 30px;
+}
+.listbtn {
+  width: 120px;
+  height: 25px;
+  display: block;
+  margin: 20px auto;
+  font-size: 12px;
+  color: #f4ee44;
+  font-weight: 600;
+  border-radius: 10px;
+  background-color: #1c4cfc;
+  border: 2px outset #4dc039;
+}
+.darkmode {
+  background-color: #ddd;
+}
+.colorchangeprovider {
+  margin: 0 auto;
+  display: flex;
+  width: 550px;
+  position: relative;
 }
 
-.App-link {
-  color: #61dafb;
+.colorchangecontainer {
+  width: 100px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
+.colorchangecontainer>button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 11px;
+  color: #f4ee44;
+  font-weight: 600;
+  border: 2px outset #f4ee44;
+  display: block;
+  margin: 10px;
+  text-align: center;
+}
+.toredmode {
+  background-color: #ef3434;
+}
+.tobluemode {
+  background-color: #0e34c0;
+}
+.togreenmode{
+  background-color: #31b41a;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
